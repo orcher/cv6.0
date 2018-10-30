@@ -1,0 +1,47 @@
+.intro-main-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: gray;
+    padding: 15px;
+    color: white;
+}
+
+.intro-info-box {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.intro-img-box {
+    width: 300px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.intro-details-box {
+    display: flex;
+    flex-flow: column;
+    margin: 25px;
+    width: 400px;
+}
+
+.position-box {
+    align-self: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-flow: row;
+    align-self: flex-end;
+    margin: 20px;
+}
+
+.contact-icon {
+    width: 30px;
+}
+
+.about-box {
+    text-align: center;
+    width: 80%;
+}

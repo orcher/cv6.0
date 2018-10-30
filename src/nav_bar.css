@@ -1,0 +1,29 @@
+﻿.nav-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: gray;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    align-self: flex-end;
+    background-color: #555555;
+    color: white;
+    padding: 5px 12px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item > a:hover {
+    color: gray;
+}

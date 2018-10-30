@@ -1,0 +1,39 @@
+.education-main-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.education-title {
+    color: gray;
+}
+
+.education-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.edu-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.edu-logo-box {
+    align-self: center;
+    background: gray;
+    border-radius: 20px;
+    width: 250px;
+    margin: 20px;
+    color: white;
+}
+
+.edu-text-box {
+    background: gray;
+    width: 60%;
+    margin: 20px;
+    padding: 15px;
+    color: white;
+}

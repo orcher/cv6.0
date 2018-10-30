@@ -1,0 +1,52 @@
+.experience-main-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.exp-title {
+    color: gray;
+}
+
+.experience-box {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.exp-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.exp-logo-box {
+    align-self: center;
+    background: gray;
+    border-radius: 20px;
+    width: 250px;
+    margin: 20px;
+    color: white;
+}
+
+.exp-text-box {
+    background: gray;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.exp-text-box-selected {
+    background: gray;
+    opacity: 1;
+    width: 60%;
+    margin: 20px;
+    padding: 15px;
+    color: white;
+}
