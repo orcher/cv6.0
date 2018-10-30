@@ -22,12 +22,18 @@
 }
 
 .edu-logo-box {
+    display: flex;
+    flex-flow: row;
     align-self: center;
     background: gray;
     border-radius: 20px;
-    width: 250px;
+
     margin: 20px;
-    color: white;
+    overflow: hidden;
+}
+
+.edu-logo-box > img {
+    height: 200px;
 }
 
 .edu-text-box {
@@ -35,5 +41,9 @@
     width: 60%;
     margin: 20px;
     padding: 15px;
+    color: white;
+}
+
+.edu-text-box > h2 > a {
     color: white;
 }

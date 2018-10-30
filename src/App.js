@@ -3,7 +3,7 @@ import Intro from './intro'
 import NavBar from './nav_bar';
 import Education from './education'
 import Projects from './projects'
-import Experience2 from './experience2'
+import Expirience2 from './expirience2'
 import './App.css';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
                     <Intro />
                     <Education />
                     <Projects />
-                    <Experience2 />
+                    <Expirience2/>
                 </div>
             </div>
         );

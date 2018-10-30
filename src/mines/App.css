@@ -1,0 +1,53 @@
+.square {
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: darkorchid;
+    color: white;
+}
+
+.mine {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    text-align: center;
+    color: red;
+}
+
+.create-btn {
+    width: 80px;
+    height: 20px;
+}
+
+.square:hover {
+    border-color: red;
+}
+
+.main-container {
+    text-align: center;
+    width: 100%;
+}
+
+.sub-container {
+    display: inline-block;
+}
+
+.sub-container-form {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sub-container-info {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}

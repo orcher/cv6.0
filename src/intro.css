@@ -1,7 +1,6 @@
 .intro-main-box {
     display: flex;
     flex-flow: column;
-    align-items: center;
     background: gray;
     padding: 15px;
     color: white;
@@ -11,19 +10,26 @@
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .intro-img-box {
-    width: 300px;
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
     margin: 25px;
-    border-radius: 20px;
+    border-radius: 50px;
+}
+
+.intro-img-box > img {
+    height: 300px;
 }
 
 .intro-details-box {
     display: flex;
     flex-flow: column;
     margin: 25px;
-    width: 400px;
+    width: 40%;
 }
 
 .position-box {
@@ -33,15 +39,31 @@
 .contact-box {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     align-self: flex-end;
     margin: 20px;
 }
 
+.contact-item {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 5px;
+}
+
+.contact-item > a {
+    align-self: center;
+    margin: 5px;
+    color: white;
+}
+
 .contact-icon {
-    width: 30px;
+    height: 5vmin;
 }
 
 .about-box {
+    align-self: center;
     text-align: center;
-    width: 80%;
+    width: 50%;
+    margin: 3%;
 }

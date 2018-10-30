@@ -1,4 +1,4 @@
-.experience-main-box {
+.expirience-main-box {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -8,9 +8,10 @@
     color: gray;
 }
 
-.experience-box {
+.expirience-box {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -32,6 +33,18 @@
 
 .exp-text-box {
     background: gray;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.exp-text-box-selected {
+    background: gray;
+    opacity: 1;
     width: 60%;
     margin: 20px;
     padding: 15px;

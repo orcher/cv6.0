@@ -1,6 +1,6 @@
 import React from 'react'
 import './education.css'
-import logo from './logo.svg'
+import uni_sign from './res/uni_sign.png'
 
 const Edu = (props) => {
     return(
@@ -19,17 +19,16 @@ const Edu = (props) => {
 const Education = () => {
     const renderContent = () => {
         return(
-            <div className='education-main-box'>
-                <h1 className='education-title'>lksdf sdflkjlsk</h1>
+            <div className='education-main-box' id='edu'>
+                <h1 className='education-title'>Education</h1>
                 <div className='education-box'>
                     <Edu 
-                        logo={logo}
-                        school_name='aldkjsalsd'
-                        faculty='asdas asda'
-                        spec='ldasf sjkdhaf'
-                        text='Id reprehenderit eu exercitation irure deserunt et sit quis ea occaecat aliquip ex Lorem. Sunt occaecat aliquip ex ipsum ut ipsum cupidatat nisi ad velit deserunt. Esse occaecat ad non anim ipsum qui et id sit fugiat occaecat.
-                            Eiusmod sunt esse et Lorem aliquip. Reprehenderit quis ullamco cupidatat cupidatat elit nisi aute enim. Quis cupidatat culpa eu do est laborum veniam qui laborum reprehenderit. Amet exercitation culpa nostrud irure labore ullamco excepteur elit non ullamco id.
-                            Qui aliqua officia nisi velit consectetur ad mollit ut nisi esse voluptate. Dolor aute sint pariatur duis eu. Magna dolor ullamco mollit ex laboris dolor. Non do esse dolor laborum ex fugiat irure dolor nisi ut laborum elit qui minim.'
+                        logo={uni_sign}
+                        school_name={<a href='https://pg.edu.pl/'>Gdansk University of Technology</a>}
+                        faculty='Electronics, Telecommunications and Computer Science'
+                        spec='Control Engineering and Robotics'
+                        text='I did my masters in the field of "Intelligent Decision-making Systems" and 
+                              gained my MSc dergee in 2011r.'
                     />
                 </div>
             </div>
