@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: gray;
+    background: black;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -25,5 +25,5 @@
 }
 
 .nav-item > a:hover {
-    color: gray;
+    color: lightgray;
 }

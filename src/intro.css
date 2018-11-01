@@ -4,6 +4,10 @@
     background: gray;
     padding: 15px;
     color: white;
+
+    background-image: url('./res/intro_img3.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .intro-info-box {
@@ -18,11 +22,14 @@
     flex-flow: row;
     overflow: hidden;
     margin: 25px;
-    border-radius: 50px;
+    margin-right: 7%;
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
 }
 
 .intro-img-box > img {
-    height: 300px;
+    height: 400px;
 }
 
 .intro-details-box {
@@ -32,7 +39,12 @@
     width: 40%;
 }
 
+.name-box {
+    font-size: 32px;
+}
+
 .position-box {
+    font-size: 24px;
     align-self: center;
 }
 
@@ -59,6 +71,9 @@
 
 .contact-icon {
     height: 5vmin;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .about-box {
@@ -66,4 +81,6 @@
     text-align: center;
     width: 50%;
     margin: 3%;
+    font-size: 24px;
+    line-height: 30px;
 }

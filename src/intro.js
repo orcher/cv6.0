@@ -39,7 +39,7 @@ const Intro = () => {
             <div className='intro-main-box' id='intro'>
                 <div className='intro-info-box'>
                     <div className='intro-img-box'>
-                        <img src={photo} alt='photo' />
+                        <img src={photo} alt='myphoto' />
                     </div>
                     <div className='intro-details-box'>
                         <div className='name-box'><h1>Krzysztof Domanski</h1></div>
@@ -50,7 +50,7 @@ const Intro = () => {
                 <div className='about-box'>
                     I am developer with experience in all sort of technologies and industries ranging from embedded development
                     on Linux platform for automotive industry to desktop applications and UI design. Recently I have been working
-                    on web development using mostly ASP .Net and found it very interesting. I love to learn new technologies and
+                    on web development using mostly ASP.Net, React and Node. I love to learn new technologies and
                     diving into challenges.
                 </div>
             </div>

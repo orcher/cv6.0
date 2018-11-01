@@ -1,12 +1,20 @@
+body {
+    font-family: 'Josefin Sans'
+}
+
 .main-box {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: lightgray;
+    background: black ;
     display: flex;
     flex-flow: column;
+
+    /* background-image: url('./res/intro_img.jpg');
+    background-size: cover;
+    background-position: center; */
 }
 
 .content-box {

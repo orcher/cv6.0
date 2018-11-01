@@ -9,8 +9,8 @@ const Edu = (props) => {
             <div className='edu-text-box'>
                 <h2>{props.school_name}</h2>
                 <h3>{props.faculty}</h3>
-                <h4>{props.spec}</h4>
-                <p>{props.text}</p>
+                <h3>{props.spec}</h3>
+                <h3>{props.text}</h3>
             </div>
         </div>
     )

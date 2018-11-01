@@ -2,10 +2,13 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 4%;
 }
 
 .projects-title {
-    color: grey;
+    align-self: flex-start;
+    margin-left: 5%;
+    color: white;
 }
 
 .projects-box {
@@ -13,18 +16,20 @@
     flex-flow: row;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .project-box {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-  
     background: gray;
     margin: 20px;
     padding: 15px;
     color: white;
     border-radius: 5px;
+    width: 25%;
+    transition-duration: .5s
 }
 
 .project-box-selected {
@@ -37,11 +42,23 @@
     padding: 15px;
     color: white;
     border-radius: 5px;
+    transition-duration: .5s
+}
+
+.project-box > img {
+    align-self: center;
+    width: 100%;
+}
+
+.proj-desc-box > span > a {
+    color: white;
 }
 
 .proj-desc-box {
-    width: 250px;
+    width: 100%;
     align-self: center;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .proj-cont-box {
@@ -61,5 +78,45 @@
 }
 
 .project-btn:hover {
-    color: gray;
+    color: lightgray;
+}
+
+.project-links-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.project-links-icon {
+    height: 3vmin;
+    background: white;
+    border-radius: 2px;
+    padding: 2px;
+    margin: 5px;
+}
+
+.contact-item-info {
+    font-size: 18px;
+}
+
+.contact-item-info > a {
+    color: white;
+}
+
+#TicTacToe {
+    background-image: url('./res/tictactoe_img.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#Mines {
+    background-image: url('./res/mines_img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#CurrencyChecker {
+    background-image: url('./res/currencyconverter_img.jpg');
+    background-size: cover;
+    background-position: center;
 }

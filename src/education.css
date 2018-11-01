@@ -2,10 +2,13 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 4%;
 }
 
 .education-title {
-    color: gray;
+    align-self: flex-start;
+    margin-left: 5%;
+    color: white;
 }
 
 .education-box {
@@ -26,8 +29,7 @@
     flex-flow: row;
     align-self: center;
     background: gray;
-    border-radius: 20px;
-
+    border-radius: 5px;
     margin: 20px;
     overflow: hidden;
 }
@@ -42,6 +44,11 @@
     margin: 20px;
     padding: 15px;
     color: white;
+    border-radius: 5px;
+
+    background-image: url('./res/edu_img.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .edu-text-box > h2 > a {
