@@ -48,28 +48,28 @@ const Expirience2 = () => {
                         time='06/2018 - ...'
                         text={
                             <div>
-                            My current position as a Senior Application Developer focuses mainly on:
-                            <ul>
-                                <li>
-                                    Developing and maintaining multiple Web Services: MyBranch, BranchProfile
-                                    (<b>C#, ASP.Net MVC, JavaScript, JQuery, Ajax, HTML, CSS, Razor</b>) ...
-                                </li>
-                                <li>
-                                    Developing and maintaining multiple desktop applications: MatchMaker (
-                                    <b>C++, WCF</b>), MessageSender (<b>C#, HTML, CSS, Razor</b>) ...
-                                </li>
-                                <li>
-                                    Developing and maintaining database infrastructure (<b>SQL Server</b>)
-                                </li>
-                                <li>
-                                    Working with business analysts to work out solutions for customer needs
-                                </li>
-                                <li>
-                                    Working with team developers and testers to improve internal proceses and
-                                    and agile transformation
-                                </li>
-                            </ul>
-                        </div>
+                                My current position as a Senior Application Developer focuses mainly on:
+                                <ul>
+                                    <li>
+                                        Developing and maintaining multiple Web Services: MyBranch, BranchProfile
+                                        (<b>C#, ASP.Net MVC, JavaScript, JQuery, Ajax, HTML, CSS, Razor</b>) ...
+                                    </li>
+                                    <li>
+                                        Developing and maintaining multiple desktop applications: MatchMaker (
+                                        <b>C++, WCF</b>), MessageSender (<b>C#, HTML, CSS, Razor</b>) ...
+                                    </li>
+                                    <li>
+                                        Developing and maintaining database infrastructure (<b>SQL Server</b>)
+                                    </li>
+                                    <li>
+                                        Working with business analysts to work out solutions for customer needs
+                                    </li>
+                                    <li>
+                                        Working with team developers and testers to improve internal proceses
+                                        and agile transformation
+                                    </li>
+                                </ul>
+                            </div>
                         }
                     />
                     <Exp
@@ -79,8 +79,8 @@ const Expirience2 = () => {
                         time='09/2016 - 06/2018'
                         text={
                             <div>
-                                My position in AMCore team in McAfee involved developement of core malware detection
-                                software.
+                                My position in AMCore team in McAfee involved developement of core
+                                 malware detection software.
                                 <ul>
                                     <li>
                                         Actively work with the team to develop/optimize the process for solution 
@@ -90,7 +90,8 @@ const Expirience2 = () => {
                                         Develop tools for existing testing framework used in testing new features
                                     </li>
                                     <li>
-                                        Analyze customer issues and help deliver solution to address their concerns
+                                        Analyze customer issues and help deliver solution to address their 
+                                        concerns
                                     </li>
                                     <li>
                                         Guide and mentor new team members on various product features

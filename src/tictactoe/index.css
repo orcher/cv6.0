@@ -1,34 +1,41 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+.tictactoe-main-box {
+    display: flex;
+    flex-flow: row;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 10px;
 }
 
-table.board-header {
-    margin: auto;
+.game-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.board-header {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    width: 240px;
-    height: 50px;
+    color: white;
 }
 
-table.history-header {
-    margin: auto;
+.history-box {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    width: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
 }
 
-table.board-table {
-    margin: auto;
-}
-
-td.board-field {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0px;
+.board-field {
+    //background: lightblue;
+    border: solid 1px;
+    border-radius: 5px;
+    min-width: 80px;
+    min-height: 80px;
     width: 80px;
     height: 80px;
     text-align: center;
@@ -36,11 +43,11 @@ td.board-field {
     font-weight: bold;
 }
 
-.board-field-red {
-    background-color: lawngreen;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0px;
+.board-field-green {
+    background: lawngreen;
+    border-radius: 5px;
+    min-width: 80px;
+    min-height: 80px;
     width: 80px;
     height: 80px;
     text-align: center;
@@ -48,14 +55,20 @@ td.board-field {
     font-weight: bold;
 }
 
-#board-container {
-
+.history-btn {
+    border: none;
+    background: #008CBA;
+    color: white;
+    padding: 5px, 12px;
+    margin: 5px;
 }
 
-#left {
-    float: left;
+.history-btn:hover {
+    color: black;
 }
 
-#right {
-    float: left;
+.history-list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }

@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import './projects.css'
 import github from './res/github-brands.svg';
-import TicTacToeGame from './tictactoe/index'
+import TicTacToe from './tictactoe/index'
 import MinesGame from './mines/App'
 import ccphoto from './res/currency-checker.png'
-
+import Flamingo from './flamingo'
 
 class Project extends Component {
     constructor(props){
@@ -68,26 +68,64 @@ const Projects = () => {
             <div className='projects-main-box' id='proj'>
                 <h1 className='projects-title'>Projects</h1>
                 <div className='projects-box'>
-                    <Project 
+                    {/* <Project 
                         title='TicTacToe'
                         desc={<span>There's no better way to learn new language (in this case <b>React</b>) then writing a game. In this case 
                             I started with TicTacToe.</span>}
                         cont={<TicTacToeGame />}
                         code='https://github.com/orcher/tic-tac-toe'
-                    />
-                    <Project 
+                    /> */}
+                    {/* <Project 
                         title='Mines'
                         desc={<span>My second atempt in writing a little game in order to learn some basics of React. Enjoy!</span>}
                         cont={<MinesGame />}
                         code='https://github.com/orcher/mines'
                         page='https://orcher.github.io/mines/'
-                    />
-                    <Project 
+                    /> */}
+                    {/* <Project 
                         title='CurrencyChecker'
                         desc={<span>Currency Chacker is an app that allows you to check currency exchange rate.
                             Porpous of this project was to practice fetching data from external API (using NodeJS for back-end).
                             No fancy UI there though :)</span>}
                         image={ccphoto}
+                        code='https://github.com/orcher/currency-check'
+                    /> */}
+                    <Flamingo 
+                        expandable
+                        title='TicTacToe'
+                        description={
+                            <span>
+                                There's no better way to learn new language (in this case <b>React</b>) then writing a game. In this case 
+                                I started with TicTacToe.
+                            </span>
+                        }
+                        content={<TicTacToe />}
+                        code='https://github.com/orcher/tic-tac-toe'
+                    />
+                    <Flamingo 
+                        expandable
+                        title='Mines'
+                        description={
+                            <span>
+                                My second atempt in writing a little game in order to learn some basics of React. Enjoy!
+                            </span>
+                        }
+                        content={<MinesGame />}
+                        code='https://github.com/orcher/mines'
+                    />
+                    <Flamingo 
+                        expandable
+                        title='CurrencyChecker'
+                        description={
+                            <span>
+                                Currency Chacker is an app that allows you to check currency exchange rate.
+                                Porpous of this project was to practice fetching data from external API (using NodeJS for back-end).
+                                No fancy UI there though :)
+                            </span>
+                        }
+                        content={
+                            <h1><img src={ccphoto} alt='proj_img' width='400px'/></h1>
+                        }
                         code='https://github.com/orcher/currency-check'
                     />
                 </div>

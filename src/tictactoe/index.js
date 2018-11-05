@@ -1,12 +1,12 @@
-import React from 'react';
-import './index.css';
+import React, { Component } from 'react';
+import './index.css'
 
-class Square extends React.Component {
+class Square extends Component {
     render() {
         return (
             <td
                 id={this.props.id}
-                className={this.props.color ? 'board-field-red' : 'board-field'}
+                className={this.props.color ? 'board-field-green' : 'board-field'}
                 onClick={() => this.props.onClick()}
             >
                 {this.props.value}
@@ -15,7 +15,7 @@ class Square extends React.Component {
     }
 }
 
-class TicTacToeGame extends React.Component {
+class TicTacToe extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -54,14 +54,10 @@ class TicTacToeGame extends React.Component {
         let timePoints = [];
         for (let i = 0; i < this.state.history.length; i++) {
             timePoints.push(
-                <li key={i}>
-                    <button onClick={() => this.turnBackTime(i)}>Go back to move {i}</button>
-                </li>
+                <button key={i} className='history-btn' onClick={() => this.turnBackTime(i)}>Back to {i}</button>
             )
         }
-        return (
-            <ol>{timePoints}</ol>
-        );
+        return <div className='history-list'>{timePoints}</div>
     }
 
     handleClick(i) {
@@ -135,27 +131,23 @@ class TicTacToeGame extends React.Component {
 
     renderInfo() {
         return (
-            <td id="info">
+            <div id="info">
                 {
                     this.state.winner === null ?
                     ('Now moves: ' + (this.state.xMoves ? 'X' : 'O')) :
                     ('Winner is: ' + this.state.winner + '!')
                 }
-            </td>
+            </div>
             );
     }
 
     render() {
         return (
-            <div id='board-container'>
-                <div id="left">
-                    <table className='board-header'>
-                        <tbody>
-                            <tr>
-                                {this.renderInfo()}
-                            </tr>
-                        </tbody>
-                    </table>
+            <div className='tictactoe-main-box'>
+                <div className='game-box'>
+                    <div className='board-header'>
+                        {this.renderInfo()}
+                    </div>
                     <table className="board-table">
                         <tbody>
                             <tr>
@@ -176,25 +168,13 @@ class TicTacToeGame extends React.Component {
                         </tbody>
                     </table>
                 </div>
-                <div id="right">
-                    <table className="history-header">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    History:
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    {this.renderHistory()}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div className='history-box'>
+                    <div className="history-header">History</div>
+                    <div className="history-steps">{this.renderHistory()}</div>
                 </div>
             </div>
         );
     }
 }
 
-export default TicTacToeGame
+export default TicTacToe
